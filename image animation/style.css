@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.5),  0px 40px 140px rgba(0,0,0,0.1);
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+    border-radius: 1rem;
+    animation: moveimage 10s linear 0s infinite alternate, movetoright 2s linear 0s infinite alternate;
+}
+
+
+@keyframes moveimage{
+    0%{ object-position: 0% 0%;}
+    25%{ object-position: 0% 25%;}
+    50%{ object-position: 0% 50%;}
+    75%{ object-position: 0% 75%;}
+    100%{ object-position: 0% 100%;}
+}
+
+@keyframes movetoright{
+    from{ transform: translateX(0);}
+    to { transform: translateX(2rem);}
+}
