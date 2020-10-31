@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+}
+
+.resume{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+.resume .row{
+    display: flex;
+}
+
+.resume .header .row{
+    align-items: center;
+    background-color: rgb(0, 41, 95);
+    padding: 1rem;
+}
+.resume .header .row .left {
+    width: 25%; 
+}
+.resume .header .row .right {
+    color: white;
+    text-align: center;
+    width: 75%; 
+}
+
+.resume .header .row .right .name{
+    font-size: 2.5rem; 
+    letter-spacing: 1px;
+    font-weight: bold;    
+    margin-bottom: 0;
+}
+
+.resume .header .row .right p{
+    margin: 0;
+    padding: 0;
+    color: rgb(173, 173, 173);
+}
+
+
+.resume .header .row .left img{
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.resume .content .row  {
+    justify-content: space-between; 
+}
+.resume .content .row .left {
+    width: 25%; 
+    text-align: right;
+    margin-right: 1rem;
+}
+.resume .content .row .right { 
+    width: 72%; 
+}
+ 
+.resume .content .row .left p{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    color: rgb(36, 36, 36);
+    text-transform: uppercase;
+}
+
+.uc{
+    text-transform: uppercase;
+}
+
+footer p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(77, 77, 77);
+}
