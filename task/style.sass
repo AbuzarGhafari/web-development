@@ -1,0 +1,418 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: sans-serif
+
+body
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    // background: red
+    padding-bottom: 10vh
+    
+
+.register
+    display: flex
+    border-radius: 10px
+    padding: 3rem 1rem
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.1)
+    .bit
+        width: 40px
+        height: 40px
+        line-height: 40px 
+        text-align: center
+        border: 0.5px solid rgba(0,0,0,0.5)
+        position: relative
+        
+
+        &::before
+            content: ''
+            position: absolute
+            top: -10px
+            left: 20px
+            width: 1px
+            height: 10px
+            background: #aaaaaa
+            transform-origin: bottom
+            transform: rotate(-45deg) translateX(-50%)
+        &::after
+            content: ''
+            position: absolute
+            top: -10px
+            left: 20px
+            width: 1px
+            height: 10px
+            background: #aaaaaa
+            transform-origin: bottom
+            transform: rotate(45deg) translateX(-50%)
+
+        .index
+            content: ''
+            position: absolute
+            bottom: -100%
+            left: 0
+            width: 40px
+            color: #b4b4b4
+        
+        .line
+            content: ''
+            position: absolute            
+            width: 100%
+            transform: translateX(-50%)
+            height: 1px
+            background: #aaaaaa
+            z-index: -1
+            box-shadow: 2px 1px 10px rgba(0,0,0,0.2)  
+            &::before
+                content: ''
+                position: absolute
+                transform: translateX(-50%)
+                width: 1px
+                height: 20px
+                background: #aaaaaa
+                z-index: -10
+            &::after       
+                content: ''
+                position: absolute                
+                transform: translateX(-50%)
+                width: 1px
+                height: 20px
+                background: #aaaaaa
+                z-index: -10        
+            &.line1
+                top: -20px
+                left: 40px
+                &::before
+                    top: 0px
+                    left: 0px
+                &::after
+                    top: 0px
+                    left: 39px
+            &.line2
+                top: -60px
+                left: 80px
+                width: 120px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 60px
+                &::after
+                    top: 0px
+                    left: 120px
+                    height: 60px
+            &.line3
+                top: -100px
+                left: 120px
+                width: 200px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 100px
+                &::after
+                    top: 0px
+                    left: 200px
+                    height: 100px
+            &.line4
+                top: -140px
+                left: 160px
+                width: 280px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 140px
+                &::after
+                    top: 0px
+                    left: 280px
+                    height: 140px
+            &.line5
+                top: -180px
+                left: 200px
+                width: 360px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 180px
+                &::after
+                    top: 0px
+                    left: 360px
+                    height: 180px
+            &.line6
+                top: -220px
+                left: 240px
+                width: 440px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 220px
+                &::after
+                    top: 0px
+                    left: 440px
+                    height: 220px
+            &.line7
+                top: -260px
+                left: 280px
+                width: 520px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 260px
+                &::after
+                    top: 0px
+                    left: 520px
+                    height: 260px
+            &.line8
+                top: -300px
+                left: 320px
+                width: 600px                
+                &::before
+                    top: 0px
+                    left: 0px
+                    height: 300px
+                &::after
+                    top: 0px
+                    left: 600px
+                    height: 300px
+
+
+
+        .box 
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 40px
+            height: 40px
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.1)
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
+            animation-duration: 4s 
+            &.box-8
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit8
+            &.box-9
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit9
+
+            &.box-7
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit7
+                animation-delay: 4s
+            &.box-10
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit10
+                animation-delay: 4s
+
+            &.box-6
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit6
+                animation-delay: 8s
+            &.box-11
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit11
+                animation-delay: 8s
+
+            &.box-5
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit5
+                animation-delay: 12s
+            &.box-12
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit12
+                animation-delay: 12s
+
+            &.box-4
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit4
+                animation-delay: 16s
+            &.box-13
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit13
+                animation-delay: 16s
+
+            &.box-3
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit3
+                animation-delay: 20s
+            &.box-14
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit14
+                animation-delay: 20s
+
+            &.box-2
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit2
+                animation-delay: 24s
+            &.box-15
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit15
+                animation-delay: 24s
+
+            &.box-1
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit1
+                animation-delay: 28s 
+            &.box-16
+                background: rgba(random(255), random(255), random(255), 0.5)
+                animation-name: bit16
+                animation-delay: 28s 
+
+
+@keyframes bit2
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-280px) 
+    50%
+        transform: translateY(-280px) translateX(520px)
+    100%
+        transform: translateY(0px) translateX(520px) 
+@keyframes bit15
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-280px) 
+    50%
+        transform: translateY(-280px) translateX(-520px)
+    100%
+        transform: translateY(0px) translateX(-520px) 
+
+@keyframes bit3
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-240px) 
+    50%
+        transform: translateY(-240px) translateX(440px)
+    100%
+        transform: translateY(0px) translateX(440px) 
+@keyframes bit14
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-240px) 
+    50%
+        transform: translateY(-240px) translateX(-440px)
+    100%
+        transform: translateY(0px) translateX(-440px) 
+
+@keyframes bit4
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-200px) 
+    50%
+        transform: translateY(-200px) translateX(360px)
+    100%
+        transform: translateY(0px) translateX(360px) 
+@keyframes bit13
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-200px) 
+    50%
+        transform: translateY(-200px) translateX(-360px)
+    100%
+        transform: translateY(0px) translateX(-360px) 
+
+@keyframes bit5
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-160px) 
+    50%
+        transform: translateY(-160px) translateX(280px)
+    100%
+        transform: translateY(0px) translateX(280px) 
+@keyframes bit12
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-160px) 
+    50%
+        transform: translateY(-160px) translateX(-280px)
+    100%
+        transform: translateY(0px) translateX(-280px) 
+
+@keyframes bit6
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-120px) 
+    50%
+        transform: translateY(-120px) translateX(200px)
+    100%
+        transform: translateY(0px) translateX(200px) 
+@keyframes bit11
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-120px) 
+    50%
+        transform: translateY(-120px) translateX(-200px)
+    100%
+        transform: translateY(0px) translateX(-200px) 
+
+@keyframes bit7
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-80px) 
+    50%
+        transform: translateY(-80px) translateX(120px)
+    100%
+        transform: translateY(0px) translateX(120px) 
+@keyframes bit10
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-80px) 
+    50%
+        transform: translateY(-80px) translateX(-120px)
+    100%
+        transform: translateY(0px) translateX(-120px) 
+
+@keyframes bit8
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-40px) 
+    50%
+        transform: translateY(-40px) translateX(40px)
+    100%
+        transform: translateY(0px) translateX(40px) 
+@keyframes bit9
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-40px) 
+    50%
+        transform: translateY(-40px) translateX(-40px)
+    100%
+        transform: translateY(0px) translateX(-40px) 
+
+
+@keyframes bit1
+    0% 
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-320px) 
+    50%
+        transform: translateY(-320px) translateX(600px)
+    100%
+        transform: translateY(0px) translateX(600px) 
+        
+@keyframes bit16
+    0%
+        // transition: all 0.5s ease
+        transform: translateY(0px)  
+    25%
+        transform: translateY(-320px) 
+    50%
+        transform: translateY(-320px) translateX(-600px)
+    100%
+        transform: translateY(0px) translateX(-600px)
+        // transition: all 0.5s ease
+        

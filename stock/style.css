@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E2E2EC;
+}
+
+.stock {
+  background: #191B2A;
+  color: #FFFFFF;
+  width: 320px;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.stock:hover {
+  -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.05) translateY(-5px);
+          transform: scale(1.05) translateY(-5px);
+}
+
+.stock .stack-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.stock .stack-info h3 {
+  font-size: 1.5rem;
+}
+
+.stock .stack-info .dots {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.stock .stack-info .dots:hover {
+  background: #2c304a;
+  -webkit-box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.stock .stack-info .dots:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.stock .stack-info .dots span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #FFFFFF;
+  margin-bottom: 2px;
+  border-radius: 50%;
+}
+
+.stock .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.stock .color .box {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #FFFFFF;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.stock .color p {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.stock .colors-box {
+  position: absolute;
+  top: 60%;
+  right: -10%;
+  background: #FFFFFF;
+  color: #101010;
+  padding: 1rem;
+  width: 160px;
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1), -10px -10px 60px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1), -10px -10px 60px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  opacity: 0 !important;
+}
+
+.stock .colors-box.show {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1 !important;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: 50%;
+}
+
+.stock .colors-box .colors-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock .colors-box .colors-info p {
+  font-size: 0.75rem;
+}
+
+.stock .colors-box .colors-info .menu {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.stock .colors-box .colors-info .menu:hover {
+  background: #e6e6e6;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.stock .colors-box .colors-info .menu:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.stock .colors-box .colors-info .menu .line {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #2B2B2B;
+}
+
+.stock .colors-box .colors-info .menu .line:nth-child(1) {
+  top: 5px;
+}
+
+.stock .colors-box .colors-info .menu .line:nth-child(2) {
+  top: 10px;
+}
+
+.stock .colors-box .colors-info .menu .circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #2B2B2B;
+  background: #FFFFFF;
+  position: absolute;
+}
+
+.stock .colors-box .colors-info .menu .circle:nth-child(3) {
+  top: 3px;
+  left: 3px;
+}
+
+.stock .colors-box .colors-info .menu .circle:nth-child(4) {
+  top: 8px;
+  left: 13px;
+}
+
+.stock .colors-box .colors {
+  margin-top: 1rem;
+}
+
+.stock .colors-box .colors .color-circle {
+  width: 20px;
+  height: 20px;
+  background: #FB5A50;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.stock .colors-box .colors .color-circle:hover {
+  -webkit-box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.stock .colors-box .colors .color-circle:nth-child(2) {
+  background: #7773FB;
+}
+
+.stock .colors-box .colors .color-circle:nth-child(3) {
+  background: #27E29E;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1004 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10vh;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  padding: 3rem 1rem;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register .bit {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.register .bit::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 1px;
+  height: 10px;
+  background: #aaaaaa;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-45deg) translateX(-50%);
+          transform: rotate(-45deg) translateX(-50%);
+}
+
+.register .bit::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 1px;
+  height: 10px;
+  background: #aaaaaa;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+}
+
+.register .bit .index {
+  content: '';
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 40px;
+  color: #b4b4b4;
+}
+
+.register .bit .line {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  background: #aaaaaa;
+  z-index: -1;
+  -webkit-box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.register .bit .line::before {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1px;
+  height: 20px;
+  background: #aaaaaa;
+  z-index: -10;
+}
+
+.register .bit .line::after {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1px;
+  height: 20px;
+  background: #aaaaaa;
+  z-index: -10;
+}
+
+.register .bit .line.line1 {
+  top: -20px;
+  left: 40px;
+}
+
+.register .bit .line.line1::before {
+  top: 0px;
+  left: 0px;
+}
+
+.register .bit .line.line1::after {
+  top: 0px;
+  left: 39px;
+}
+
+.register .bit .line.line2 {
+  top: -60px;
+  left: 80px;
+  width: 120px;
+}
+
+.register .bit .line.line2::before {
+  top: 0px;
+  left: 0px;
+  height: 60px;
+}
+
+.register .bit .line.line2::after {
+  top: 0px;
+  left: 120px;
+  height: 60px;
+}
+
+.register .bit .line.line3 {
+  top: -100px;
+  left: 120px;
+  width: 200px;
+}
+
+.register .bit .line.line3::before {
+  top: 0px;
+  left: 0px;
+  height: 100px;
+}
+
+.register .bit .line.line3::after {
+  top: 0px;
+  left: 200px;
+  height: 100px;
+}
+
+.register .bit .line.line4 {
+  top: -140px;
+  left: 160px;
+  width: 280px;
+}
+
+.register .bit .line.line4::before {
+  top: 0px;
+  left: 0px;
+  height: 140px;
+}
+
+.register .bit .line.line4::after {
+  top: 0px;
+  left: 280px;
+  height: 140px;
+}
+
+.register .bit .line.line5 {
+  top: -180px;
+  left: 200px;
+  width: 360px;
+}
+
+.register .bit .line.line5::before {
+  top: 0px;
+  left: 0px;
+  height: 180px;
+}
+
+.register .bit .line.line5::after {
+  top: 0px;
+  left: 360px;
+  height: 180px;
+}
+
+.register .bit .line.line6 {
+  top: -220px;
+  left: 240px;
+  width: 440px;
+}
+
+.register .bit .line.line6::before {
+  top: 0px;
+  left: 0px;
+  height: 220px;
+}
+
+.register .bit .line.line6::after {
+  top: 0px;
+  left: 440px;
+  height: 220px;
+}
+
+.register .bit .line.line7 {
+  top: -260px;
+  left: 280px;
+  width: 520px;
+}
+
+.register .bit .line.line7::before {
+  top: 0px;
+  left: 0px;
+  height: 260px;
+}
+
+.register .bit .line.line7::after {
+  top: 0px;
+  left: 520px;
+  height: 260px;
+}
+
+.register .bit .line.line8 {
+  top: -300px;
+  left: 320px;
+  width: 600px;
+}
+
+.register .bit .line.line8::before {
+  top: 0px;
+  left: 0px;
+  height: 300px;
+}
+
+.register .bit .line.line8::after {
+  top: 0px;
+  left: 600px;
+  height: 300px;
+}
+
+.register .bit .box {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.register .bit .box.box-8 {
+  background: rgba(27, 149, 56, 0.5);
+  -webkit-animation-name: bit8;
+          animation-name: bit8;
+}
+
+.register .bit .box.box-9 {
+  background: rgba(24, 210, 210, 0.5);
+  -webkit-animation-name: bit9;
+          animation-name: bit9;
+}
+
+.register .bit .box.box-7 {
+  background: rgba(122, 169, 131, 0.5);
+  -webkit-animation-name: bit7;
+          animation-name: bit7;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.register .bit .box.box-10 {
+  background: rgba(110, 95, 235, 0.5);
+  -webkit-animation-name: bit10;
+          animation-name: bit10;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.register .bit .box.box-6 {
+  background: rgba(45, 170, 171, 0.5);
+  -webkit-animation-name: bit6;
+          animation-name: bit6;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.register .bit .box.box-11 {
+  background: rgba(4, 24, 13, 0.5);
+  -webkit-animation-name: bit11;
+          animation-name: bit11;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.register .bit .box.box-5 {
+  background: rgba(222, 152, 57, 0.5);
+  -webkit-animation-name: bit5;
+          animation-name: bit5;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.register .bit .box.box-12 {
+  background: rgba(191, 235, 63, 0.5);
+  -webkit-animation-name: bit12;
+          animation-name: bit12;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.register .bit .box.box-4 {
+  background: rgba(210, 54, 232, 0.5);
+  -webkit-animation-name: bit4;
+          animation-name: bit4;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.register .bit .box.box-13 {
+  background: rgba(209, 9, 133, 0.5);
+  -webkit-animation-name: bit13;
+          animation-name: bit13;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.register .bit .box.box-3 {
+  background: rgba(40, 107, 30, 0.5);
+  -webkit-animation-name: bit3;
+          animation-name: bit3;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.register .bit .box.box-14 {
+  background: rgba(255, 182, 242, 0.5);
+  -webkit-animation-name: bit14;
+          animation-name: bit14;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.register .bit .box.box-2 {
+  background: rgba(43, 109, 13, 0.5);
+  -webkit-animation-name: bit2;
+          animation-name: bit2;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.register .bit .box.box-15 {
+  background: rgba(44, 8, 180, 0.5);
+  -webkit-animation-name: bit15;
+          animation-name: bit15;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.register .bit .box.box-1 {
+  background: rgba(191, 112, 177, 0.5);
+  -webkit-animation-name: bit1;
+          animation-name: bit1;
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
+}
+
+.register .bit .box.box-16 {
+  background: rgba(133, 193, 131, 0.5);
+  -webkit-animation-name: bit16;
+          animation-name: bit16;
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
+}
+
+@-webkit-keyframes bit2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  50% {
+    -webkit-transform: translateY(-280px) translateX(520px);
+            transform: translateY(-280px) translateX(520px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(520px);
+            transform: translateY(0px) translateX(520px);
+  }
+}
+
+@keyframes bit2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  50% {
+    -webkit-transform: translateY(-280px) translateX(520px);
+            transform: translateY(-280px) translateX(520px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(520px);
+            transform: translateY(0px) translateX(520px);
+  }
+}
+
+@-webkit-keyframes bit15 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  50% {
+    -webkit-transform: translateY(-280px) translateX(-520px);
+            transform: translateY(-280px) translateX(-520px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-520px);
+            transform: translateY(0px) translateX(-520px);
+  }
+}
+
+@keyframes bit15 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  50% {
+    -webkit-transform: translateY(-280px) translateX(-520px);
+            transform: translateY(-280px) translateX(-520px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-520px);
+            transform: translateY(0px) translateX(-520px);
+  }
+}
+
+@-webkit-keyframes bit3 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px) translateX(440px);
+            transform: translateY(-240px) translateX(440px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(440px);
+            transform: translateY(0px) translateX(440px);
+  }
+}
+
+@keyframes bit3 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px) translateX(440px);
+            transform: translateY(-240px) translateX(440px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(440px);
+            transform: translateY(0px) translateX(440px);
+  }
+}
+
+@-webkit-keyframes bit14 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px) translateX(-440px);
+            transform: translateY(-240px) translateX(-440px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-440px);
+            transform: translateY(0px) translateX(-440px);
+  }
+}
+
+@keyframes bit14 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px) translateX(-440px);
+            transform: translateY(-240px) translateX(-440px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-440px);
+            transform: translateY(0px) translateX(-440px);
+  }
+}
+
+@-webkit-keyframes bit4 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px) translateX(360px);
+            transform: translateY(-200px) translateX(360px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(360px);
+            transform: translateY(0px) translateX(360px);
+  }
+}
+
+@keyframes bit4 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px) translateX(360px);
+            transform: translateY(-200px) translateX(360px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(360px);
+            transform: translateY(0px) translateX(360px);
+  }
+}
+
+@-webkit-keyframes bit13 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px) translateX(-360px);
+            transform: translateY(-200px) translateX(-360px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-360px);
+            transform: translateY(0px) translateX(-360px);
+  }
+}
+
+@keyframes bit13 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px) translateX(-360px);
+            transform: translateY(-200px) translateX(-360px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-360px);
+            transform: translateY(0px) translateX(-360px);
+  }
+}
+
+@-webkit-keyframes bit5 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px) translateX(280px);
+            transform: translateY(-160px) translateX(280px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(280px);
+            transform: translateY(0px) translateX(280px);
+  }
+}
+
+@keyframes bit5 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px) translateX(280px);
+            transform: translateY(-160px) translateX(280px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(280px);
+            transform: translateY(0px) translateX(280px);
+  }
+}
+
+@-webkit-keyframes bit12 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px) translateX(-280px);
+            transform: translateY(-160px) translateX(-280px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-280px);
+            transform: translateY(0px) translateX(-280px);
+  }
+}
+
+@keyframes bit12 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px) translateX(-280px);
+            transform: translateY(-160px) translateX(-280px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-280px);
+            transform: translateY(0px) translateX(-280px);
+  }
+}
+
+@-webkit-keyframes bit6 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  50% {
+    -webkit-transform: translateY(-120px) translateX(200px);
+            transform: translateY(-120px) translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(200px);
+            transform: translateY(0px) translateX(200px);
+  }
+}
+
+@keyframes bit6 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  50% {
+    -webkit-transform: translateY(-120px) translateX(200px);
+            transform: translateY(-120px) translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(200px);
+            transform: translateY(0px) translateX(200px);
+  }
+}
+
+@-webkit-keyframes bit11 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  50% {
+    -webkit-transform: translateY(-120px) translateX(-200px);
+            transform: translateY(-120px) translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-200px);
+            transform: translateY(0px) translateX(-200px);
+  }
+}
+
+@keyframes bit11 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  50% {
+    -webkit-transform: translateY(-120px) translateX(-200px);
+            transform: translateY(-120px) translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-200px);
+            transform: translateY(0px) translateX(-200px);
+  }
+}
+
+@-webkit-keyframes bit7 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-80px) translateX(120px);
+            transform: translateY(-80px) translateX(120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(120px);
+            transform: translateY(0px) translateX(120px);
+  }
+}
+
+@keyframes bit7 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-80px) translateX(120px);
+            transform: translateY(-80px) translateX(120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(120px);
+            transform: translateY(0px) translateX(120px);
+  }
+}
+
+@-webkit-keyframes bit10 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-80px) translateX(-120px);
+            transform: translateY(-80px) translateX(-120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-120px);
+            transform: translateY(0px) translateX(-120px);
+  }
+}
+
+@keyframes bit10 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-80px) translateX(-120px);
+            transform: translateY(-80px) translateX(-120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-120px);
+            transform: translateY(0px) translateX(-120px);
+  }
+}
+
+@-webkit-keyframes bit8 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(-40px) translateX(40px);
+            transform: translateY(-40px) translateX(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(40px);
+            transform: translateY(0px) translateX(40px);
+  }
+}
+
+@keyframes bit8 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(-40px) translateX(40px);
+            transform: translateY(-40px) translateX(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(40px);
+            transform: translateY(0px) translateX(40px);
+  }
+}
+
+@-webkit-keyframes bit9 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(-40px) translateX(-40px);
+            transform: translateY(-40px) translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-40px);
+            transform: translateY(0px) translateX(-40px);
+  }
+}
+
+@keyframes bit9 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(-40px) translateX(-40px);
+            transform: translateY(-40px) translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-40px);
+            transform: translateY(0px) translateX(-40px);
+  }
+}
+
+@-webkit-keyframes bit1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  50% {
+    -webkit-transform: translateY(-320px) translateX(600px);
+            transform: translateY(-320px) translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(600px);
+            transform: translateY(0px) translateX(600px);
+  }
+}
+
+@keyframes bit1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  50% {
+    -webkit-transform: translateY(-320px) translateX(600px);
+            transform: translateY(-320px) translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(600px);
+            transform: translateY(0px) translateX(600px);
+  }
+}
+
+@-webkit-keyframes bit16 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  50% {
+    -webkit-transform: translateY(-320px) translateX(-600px);
+            transform: translateY(-320px) translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-600px);
+            transform: translateY(0px) translateX(-600px);
+  }
+}
+
+@keyframes bit16 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  50% {
+    -webkit-transform: translateY(-320px) translateX(-600px);
+            transform: translateY(-320px) translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateX(-600px);
+            transform: translateY(0px) translateX(-600px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
