@@ -1,0 +1,229 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-container {
+    width: 100%;
+} 
+
+header .header-brand {
+    font-size: 24px;
+    color: #111;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: #111;
+    font-weight: 100;
+    padding: 0 1rem;
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Catamaran', sans-serif;
+}
+
+header .header-cases {
+    display: none;
+}
+
+
+/* INDEX */
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('../img/sky2.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.index-banner h2 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+.index-banner h1 {
+    font-size: 28px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 34px;
+    font-style: italic;
+}
+
+.index-boxeslinks {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-boxeslinks a div {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #111;
+}
+
+.index-boxeslinks a:last-child div {
+    margin-bottom: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 40px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    width: fit-content;
+}
+
+footer .footer-links-main li a {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    width: 100px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+footer .footer-links-cases {
+    display: none;
+}
+
+footer .footer-sm {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-sm a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+} 
+
+@media only screen and (min-width: 1000px) {
+
+    header .header-container {
+        margin: 0 auto;
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header-container .header-brand {
+        flex-basis: 10%;
+    }
+
+    header .header-container nav {
+        flex-basis: calc(90% - 60px);
+    }
+
+    header .header-container nav ul {
+        justify-content: flex-start;
+    }
+
+    header .header-container .header-brand {
+        margin: 0;
+        padding: 0;
+        line-height: 38px;
+        border-right: 3px solid #111;
+    }
+
+    header .header-container .header-cases {
+        display: inline-block;
+        flex-basis: 60px;
+        color: #111;
+        font-family: Cara;
+        padding: 0.5rem;
+        text-align: center;
+        border: 1px solid #111;
+    } 
+
+    .index-boxeslinks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .index-boxeslinks .index-boxlink-square {
+        width: 300px;
+        height: 300px;
+        margin: 1rem;
+    }
+
+    .index-boxeslinks .index-boxlink-rectangle {
+        width: 500px;
+        height: 300px;
+        margin: 1rem;
+    }
+
+    footer .footer-links-cases {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        color: #fff;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    footer .footer-links-cases a {
+        color: #fff;
+        padding: 0.5rem 0;
+        display: block;
+    }
+}

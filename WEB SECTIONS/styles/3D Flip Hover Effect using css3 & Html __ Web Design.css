@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3f1e4d;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: tahoma;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+    margin-top: 84px;
+}
+
+.cols{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem 5px;
+    cursor: pointer;
+}
+
+.container{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front1{
+    background-image: url('../images/boy1.jpg');
+}
+
+.front2{
+    background-image: url('../images/boy2.jpg');
+}
+
+.front3{
+    background-image: url('../images/boy3.jpg');
+}
+
+.front4{
+    background-image: url('../images/boy4.jpg');
+}
+
+.front5{
+    background-image: url('../images/boy5.jpg');
+}
+
+.front6{
+    background-image: url('../images/boy6.jpg');
+}
+
+.front7{
+    background-image: url('../images/childs1.jpg');
+}
+
+.front8{
+    background-image: url('../images/toys.jpg');
+}
+ 
+.front, .back{
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2,1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    color: aliceblue;
+    font-size: 1rem;
+    border: 4px solid aliceblue;
+    border-radius: 100%;
+}
+
+.back{ 
+    background: linear-gradient(0deg, #3f1e4d 30%, #fff 100%);
+}
+
+
+.front:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    backface-visibility: hidden;
+}
+
+.container:hover .front,
+.container:hover .back{
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.inner{
+    transform: translateY(-50%) translateZ(59px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+}
+
+
+.container .back{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+
+.container .front{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.container:hover .front{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

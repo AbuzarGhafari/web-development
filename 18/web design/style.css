@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container  {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+nav .logo{
+    font-weight: 700;
+    font-size: 2rem;
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+}
+
+nav ul li a{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+
+nav .search{
+    border: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.content{ 
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.content h1{
+    margin-top: 15vh;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.content h1 span{
+    display: block;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: -25px;
+}
+
+.content p{
+    color: #aaa;
+    margin-bottom: 15vh;
+    margin-top: 2rem;
+}
+
+.content .btn{
+    width: 180px;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,37,104,1) 0%, rgba(21,0,255,1) 100%);
+    padding: 0.75rem 0.25rem;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

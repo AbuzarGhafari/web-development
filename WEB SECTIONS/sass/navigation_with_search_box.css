@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background: url("../images/b7.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header {
+  background: #900000;
+  -webkit-box-shadow: 0 1px 0 #991313, 0 2px 0 #d01f1f, 0 3px 0 #dc2f2f, 0 4px 0 #ec3434, 0 5px 0 #ea2a2a, 0 7px 2px #ff3333;
+          box-shadow: 0 1px 0 #991313, 0 2px 0 #d01f1f, 0 3px 0 #dc2f2f, 0 4px 0 #ec3434, 0 5px 0 #ea2a2a, 0 7px 2px #ff3333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+}
+
+header nav ul li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header form {
+  padding-right: 1.5rem;
+}
+
+header form input {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+}
+
+header form input[type=submit] {
+  color: #ffffff;
+  background: #000000;
+  cursor: pointer;
+}
+
+header form input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav {
+    margin-bottom: 0.5rem;
+  }
+  header nav a {
+    padding: 0.5rem 1rem !important;
+  }
+  header form {
+    margin-bottom: 0.5rem;
+    padding-right: 0 !important;
+  }
+}
+/*# sourceMappingURL=navigation_with_search_box.css.map */

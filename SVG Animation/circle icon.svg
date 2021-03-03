@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="myicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#BEBFBF;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#00A150;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<circle id="circle" class="st0" cx="200" cy="200" r="190"/>
+<polyline id="checkmark" class="st1" points="114.7,213.3 162.7,261.3 285.3,138.7 "/>
+</svg>

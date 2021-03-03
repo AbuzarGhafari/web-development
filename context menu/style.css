@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #0345FF;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.svg-icon {
+  width: 18px;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.svg-icon.angle-right {
+  width: 8px;
+}
+
+.menu {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  color: #424242;
+  padding: 1rem 0rem;
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+  -webkit-transform: scale(0.6) scaleY(0.5);
+          transform: scale(0.6) scaleY(0.5);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.menu.show {
+  opacity: 1;
+  -webkit-transform: scale(1) scaleY(1);
+          transform: scale(1) scaleY(1);
+  z-index: 99;
+}
+
+.menu .line {
+  height: 1px;
+  width: 100%;
+  margin: 0.5rem 0;
+  background: #D6D6D6;
+}
+
+.menu .item {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu .item:hover {
+  background: #D6D6D6;
+}
+
+.menu .item .fa-angle-right {
+  width: auto;
+}
+
+.menu .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .flex:hover .sub-menu {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.menu .flex .sub-menu {
+  -webkit-box-shadow: -20px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: -20px 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 95%;
+  top: 0rem;
+  background: #ffffff;
+  width: 240px;
+  border-radius: 0.5rem;
+  padding: 1rem 0rem;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.menu .flex .sub-menu.hide {
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.menu .flex .sub-menu .sub-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #424242;
+  padding: 1rem 1.5rem 1rem 2rem;
+}
+
+.menu .flex .sub-menu .sub-item:hover {
+  background: #D6D6D6;
+}
+
+.menu .flex .sub-menu .social-link:nth-child(1) svg {
+  fill: #25D366;
+}
+
+.menu .flex .sub-menu .social-link:nth-child(2) svg {
+  fill: #424242;
+}
+
+.menu .flex .sub-menu .social-link:nth-child(3) svg {
+  fill: #FF0000;
+}
+
+.menu .flex .sub-menu .sub-status:nth-child(1) svg {
+  fill: #ff9900;
+}
+
+.menu .flex .sub-menu .sub-status:nth-child(2) svg {
+  fill: #0051ff;
+}
+
+.menu .flex .sub-menu .sub-status:nth-child(3) svg {
+  fill: #00be6f;
+}
+/*# sourceMappingURL=style.css.map */

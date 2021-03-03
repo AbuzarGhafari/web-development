@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background: url("../images/exploration.png");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin-left: 5rem;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1500px;
+}
+
+header .logo a {
+  font-size: 2rem;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #2b2b2b;
+  font-size: 1.2rem;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+header nav ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  width: 2rem;
+  height: 3px;
+  background-color: #001fd2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header nav ul li a:hover {
+  color: #001fd2;
+}
+
+header nav ul li a:hover:before {
+  bottom: 0;
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+header nav ul li:first-child a {
+  color: #001fd2;
+}
+
+header nav ul li:first-child a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2rem;
+  height: 3px;
+  background-color: #001fd2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.exploration-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 800px;
+  height: 70vh;
+}
+
+.exploration-section .heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  color: #2b2b2b;
+}
+
+.exploration-section .text {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  margin-bottom: 2rem;
+}
+
+.exploration-section .email p {
+  color: #2b2b2b;
+  padding-bottom: 1rem;
+}
+
+.exploration-section .email p.bold {
+  font-weight: bold;
+}
+
+.exploration-section .email .box {
+  font-weight: normal;
+  border: 2px solid #b9c1f4;
+  border-radius: 5px;
+  width: 50%;
+  padding: 1rem;
+  background: #fafbff;
+  color: #2b2b2b;
+}
+
+.exploration-section .email .box p {
+  padding-bottom: 0.5rem;
+}
+
+.exploration-section .email .box input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.exploration-section .email .box ::-webkit-input-placeholder {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.exploration-section .email .box :-ms-input-placeholder {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.exploration-section .email .box ::-ms-input-placeholder {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.exploration-section .email .box ::placeholder {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.exploration-section .get-started {
+  margin-top: 5rem;
+}
+
+.exploration-section .get-started a {
+  display: inline-block;
+  background-color: #001fd2;
+  border: 1px solid #001fd2;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.exploration-section .get-started a:hover {
+  background-color: #ffffff;
+  color: #001fd2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vw - 5rem);
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer .pagination li i,
+footer .socials ul li a i {
+  display: block;
+  border: 1px solid #888d9d;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #888d9d;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer .pagination p {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  height: 30px;
+  color: #888d9d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socials ul li:nth-child(1) i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #3b5998;
+  border-color: #3b5998;
+  -webkit-box-shadow: 0px 0px 1rem rgba(59, 89, 152, 0.5);
+          box-shadow: 0px 0px 1rem rgba(59, 89, 152, 0.5);
+}
+
+footer .socials ul li:nth-child(2) i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #bc2a8d;
+  border-color: #bc2a8d;
+  -webkit-box-shadow: 0px 0px 1rem rgba(188, 42, 141, 0.5);
+          box-shadow: 0px 0px 1rem rgba(188, 42, 141, 0.5);
+}
+
+footer .socials ul li:nth-child(3) i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #00aced;
+  border-color: #00aced;
+  -webkit-box-shadow: 0px 0px 1rem rgba(0, 172, 237, 0.5);
+          box-shadow: 0px 0px 1rem rgba(0, 172, 237, 0.5);
+}
+
+footer .pagination ul li:nth-child(1) i:hover,
+footer .pagination ul li:nth-child(3) i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #001fd2;
+  border-color: #001fd2;
+  -webkit-box-shadow: 0px 0px 1rem rgba(0, 31, 210, 0.5);
+          box-shadow: 0px 0px 1rem rgba(0, 31, 210, 0.5);
+}
+/*# sourceMappingURL=exploration_design.css.map */

@@ -1,0 +1,76 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+
+body
+    background: url('../images/b10.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    background-attachment: fixed
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+
+.menu-area
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #ffffff
+        background: #cb3529
+        height: 50px
+        font-weight: bold
+        text-decoration: none
+        text-transform: uppercase
+        &:hover
+            background: tomato
+            color: #ffffff
+            transition: all 0.5s ease
+            
+    ul
+        list-style: none
+        display: flex
+
+    li
+        position: relative
+        width: 100%
+        text-align: center
+        &:hover .dropdown-1 > li            
+            display: block
+            top: 0
+
+.dropdown-1
+    position: absolute
+    display: flex
+    flex-direction: column
+    width: 100%
+    li
+        display: none
+        position: relative
+        &:hover .dropdown-2 li
+            display: block
+
+.dropdown-2
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 0
+    left: 100%
+    width: 200px 
+    li
+        display: none
+    
+
+.banner
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100vw
+    height: 90vh
+    margin-left: -2rem
+    img
+        width: 800px
+        

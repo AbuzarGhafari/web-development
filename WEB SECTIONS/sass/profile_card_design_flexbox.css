@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background: url("../images/b8.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  height: 400px;
+  background-color: #ccffcc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper .img img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper .img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrapper .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  background-color: #ffffff;
+  height: 400px;
+  position: relative;
+  z-index: 3;
+}
+
+.wrapper .info:before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 100%;
+  left: -1.5rem;
+  background-color: #ffffff;
+  z-index: -1;
+  -webkit-transform: skewX(5deg);
+          transform: skewX(5deg);
+}
+
+.wrapper .info .name {
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 0 0;
+}
+
+.wrapper .info .occupation {
+  text-align: center;
+  color: #c95405;
+  padding: 0 0 1rem;
+}
+
+.wrapper .info .description {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.wrapper .info .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .info .socials ul li {
+  list-style: none;
+}
+
+.wrapper .info .socials ul li a {
+  text-decoration: none;
+}
+
+.wrapper .info .socials ul li a i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #c95405;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper .info .socials ul li a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=profile_card_design_flexbox.css.map */

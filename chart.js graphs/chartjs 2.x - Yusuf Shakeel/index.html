@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChartJS</title>
+    <link rel="stylesheet" href="css/Chart.min.css" />
+  </head>
+  <body>
+
+    <a href="line.html">line chart</a>
+    <a href="bar.html">bar chart</a>
+    <a href="stacked-bar-chart.html">stacked bar chart</a>
+
+    <canvas id="chartCanvas"></canvas>
+
+    <!-- javascript -->
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+    <script>
+      var ctx = $("#chartCanvas");
+      var chart = new Chart(ctx, {
+        type: "line",
+        data: {},
+        options: {},
+      });
+
+    </script>
+  </body>
+</html>

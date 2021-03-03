@@ -1,0 +1,124 @@
+$primary-color: #0345FF
+$dark-color: #424242
+$light-color: #D6D6D6
+$white-color: #ffffff
+$line-color: #c5c5c5
+    
+@mixin transition
+    transition: all 0.3s ease
+
+@mixin  boxshadow($x-offset)
+    box-shadow: $x-offset 10px 20px rgba(0,0,0,0.1)
+    
+@mixin flex($justify-content)
+    display: flex
+    align-items: center
+    justify-content: $justify-content
+    
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: $primary-color
+    font-family: sans-serif
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    @include flex(center)
+    
+.svg-icon
+    width: 18px
+    display: inline-block
+    margin-right: 1rem
+    &.angle-right
+        width: 8px
+
+
+.menu 
+    @include boxshadow(0px)
+    @include transition
+    background: $white-color
+    border-radius: 0.5rem
+    color: $dark-color
+    padding: 1rem 0rem
+    position: absolute
+    width: 300px
+    opacity: 0
+    transform: scale(0.6) scaleY(0.5)
+    transform-origin: top left 
+
+    &.show 
+        opacity: 1
+        transform: scale(1) scaleY(1)
+        z-index: 99
+
+    .line
+        height: 1px
+        width: 100%
+        margin: 0.5rem 0
+        background: $light-color
+
+    .item
+        @include transition
+        @include flex(flex-start) 
+        padding: 1rem 1.5rem
+        cursor: pointer
+        position: relative
+        &:hover
+            background: $light-color
+
+        .fa-angle-right
+            width: auto
+
+            
+    .flex        
+        @include flex(space-between)
+        &:hover
+            .sub-menu 
+                opacity: 1 
+                transform: scale(1)
+
+        .sub-menu
+            @include boxshadow(-20px)
+            @include transition
+            position: absolute
+            left: 95%
+            top: 0rem
+            background: $white-color
+            width: 240px
+            border-radius: 0.5rem
+            padding: 1rem 0rem
+            opacity: 1
+            transform: scale(0)
+            transform-origin: top left
+            &.hide
+                opacity: 1
+                transform: scale(0)
+                      
+            .sub-item
+                @include flex(flex-start)
+                @include transition
+                text-decoration: none
+                color: $dark-color
+                padding: 1rem 1.5rem 1rem 2rem
+                &:hover
+                    background: $light-color
+
+            .social-link
+                &:nth-child(1) svg
+                    fill: #25D366
+                &:nth-child(2) svg
+                    fill: $dark-color
+                &:nth-child(3) svg
+                    fill: #FF0000
+
+            .sub-status
+                &:nth-child(1) svg
+                    fill: #ff9900 
+                &:nth-child(2) svg
+                    fill: #0051ff
+                &:nth-child(3) svg
+                    fill: #00be6f

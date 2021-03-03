@@ -1,0 +1,518 @@
+:root {
+    --primary-color: #1d2029;
+    --secondayr-color: #21252e;
+    --accent-color: #fa573a;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+
+.navbar .nav a {
+    padding: 0 1rem;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+.navbar .nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Showcase */
+.section-a {
+    padding: 6rem 0 5rem 0;
+    background-color: var(--secondayr-color);
+    color: white;
+}
+
+.section-a .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-a h1 {
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+
+.section-a h3 {
+    font-size: 2rem;
+}
+
+.section-a p {
+    margin: 1rem 0;
+}
+
+.section-a img {
+    width: 50vw;
+}
+
+/* Section B */
+.section-b {
+    margin: 5rem 0;
+}
+
+.section-b .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 5rem;
+}
+
+.section-b .section-b-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-b .card {
+    border-bottom: 2px solid var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+}
+
+.section-b .card.card-inner {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-gap: 1rem;
+}
+
+.section-b h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section-b .card > div {
+    text-align: justify;
+}
+
+.section-b i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    font-size: 3rem;
+    padding: 1.5rem 1rem;
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.section-b i:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.section-b h3 {
+    font-size: 1.5rem;
+}
+
+.section-b p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.section-b a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.section-b a:hover {
+    text-decoration: underline;
+}
+
+.section-b .section-b-inner hr {
+    width: 50px;
+    border: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 5rem 0;
+}
+
+/* Section C */
+.section-c {
+    /* empty for now */
+}
+
+.section-c .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    place-items: start;
+}
+
+.section-c h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-c h2 {
+    font-size: 2rem;
+    padding: 4rem 0 0.1rem 0;
+}
+
+.section-c h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    padding-bottom: 0.3rem;
+}
+
+.section-c p {
+    font-size: 1.1rem;
+}
+
+.section-c .detail {
+    margin-top: 1rem;
+}
+
+.section-c .detail i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+.section-c .detail p {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Section D */
+.section-d {
+    padding: 5rem 0;
+}
+
+.section-d iframe {
+    width: 100%;
+    height: 75vh;
+}
+
+/* Section E */
+.section-e .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-e .card {
+    border: 1px solid #333;
+    text-align: center;
+    margin: 1rem;
+    padding: 7rem 5rem;
+    background-color: var(--secondayr-color);
+}
+
+.section-e h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-e .card h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.section-e .card h4 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.section-e .card > div {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.section-e .card p {
+    padding: 0.2rem 0;
+}
+
+.section-e .card .btn-nofill {
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem 1.2rem;
+}
+
+.section-e .card .btn-nofill:hover {
+    background: var(--accent-color);
+    border: 1px solid transparent;
+    color: white;
+}
+
+.section-e .card .btn-fill {
+    padding: 0.5rem 1.2rem;
+}
+
+/* Section-footer Upper*/
+.section-footer {
+    background: var(--secondayr-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+.section-footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-footer .section-upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+/* Email Form */
+.section-footer form {
+    text-align: end;
+}
+.email-form {
+    display: inline-block;
+    background-color: #555;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+}
+
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.email-form #submit {
+    display: none;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: var(--accent-color);
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Section Footer Lower */
+.section-footer .section-lower {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.section-footer h2 {
+    font-size: 2rem;
+}
+
+.section-footer h3 {
+    font-size: 1.3rem;
+}
+
+.section-footer p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+}
+
+.section-footer hr {
+    width: 32px;
+    border: 0;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 0.5rem 0;
+}
+
+.section-footer a {
+    display: block;
+    line-height: 1.9;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.section-footer a:hover {
+    color: var(--accent-color);
+    transform: translateX(1rem);
+}
+
+/* Utilities */
+.btn {
+    display: inline-block;
+    background: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 0.8rem 1.5rem;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+/* Below 700px width */
+@media (max-width: 700px) {
+    .section-a .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-a .container div:first-child {
+        order: 2;
+    }
+
+    .section-a .container div:last-child {
+        order: -1;
+    }
+
+    .section-a img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section-b .section-b-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .section-c .container {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .section-c h2 {
+        padding-top: 1rem;
+    }
+
+    .section-c p {
+        font-size: 1rem;
+    }
+
+    .section-footer .section-upper {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .section-footer .section-lower {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav li:not(:first-child):not(:last-child) {
+        display: none;
+    }
+}

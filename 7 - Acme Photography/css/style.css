@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #eeeeee;
+  height: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  -webkit-box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+  background: #ffffff;
+}
+
+#landing-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40vw;
+          flex: 0 1 40vw;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#landing-text h2 {
+  color: #888888;
+}
+
+#landing-text .btn {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+  border: 1px #cccccc solid;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#landing-text .btn:hover {
+  background: #f4f4f4;
+}
+
+#landing-image {
+  background: url("https://images.unsplash.com/photo-1522206024047-9c925421675b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60vw;
+          flex: 0 1 60vw;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+
+#header h2 {
+  border-left: dotted 1px #ffffff;
+  border-right: dotted 1px #ffffff;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.caption h3, .caption p {
+  padding-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem 1rem;
+  margin: auto;
+  color: #333333;
+}
+
+footer h3 {
+  font-size: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 501px) {
+  #landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing-text, #landing-image {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 701px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

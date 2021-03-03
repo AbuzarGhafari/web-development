@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background: url("../images/b6.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1000px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1rem rgba(255, 255, 255, 0.15);
+          box-shadow: 0 3px 1rem rgba(255, 255, 255, 0.15);
+}
+
+.form-layout .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+}
+
+.form-layout .left div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-layout .left div label {
+  margin-left: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.form-layout .left div input {
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+}
+
+.form-layout .left input[type=submit] {
+  border: none;
+  outline: none;
+  background: #fc4b06;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  margin: 1rem 0 0 .6rem;
+}
+
+.form-layout .left input[type=submit]:hover {
+  color: #fc4b06;
+  border: 1px solid #ffffff;
+  background: transparent;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.form-layout .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  margin-left: 2rem;
+}
+
+.form-layout .right label {
+  margin-left: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.form-layout .right textarea {
+  width: 100%;
+  height: 90%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+}
+/*# sourceMappingURL=simple_form_layout.css.map */

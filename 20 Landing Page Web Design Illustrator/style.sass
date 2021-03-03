@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif;
+
+body
+    background: url('20-Landing-Page-Web-Design-Illustrator.png')
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    width: 100%
+    min-height: 100vh
+    overflow: hidden
+
+
+a
+    text-decoration: none
+    color: black
+
+
+ul
+    list-style: none
+
+
+// mixin
+@mixin display-flex
+    display: flex
+    justify-content: space-between
+
+
+.container
+    max-width: 1200px
+    width: 80%
+    margin: auto
+ 
+header .container
+    @include display-flex
+    padding: 3rem 0
+
+    .logo
+        font-weight: bold
+        font-size: 1.1rem
+        text-transform: uppercase
+        color: #333333
+        flex: 1.5
+
+    nav 
+        flex: 1
+        ul
+            @include display-flex
+            li a
+                display: block
+                color: #ffffff
+                &.login-btn
+                    outline: none
+                    background: #ffffff
+                    padding: 0.25rem 1rem
+                    color: black !important
+                    border-radius: 1.2rem
+                    text-align: center
+                    box-shadow: 3px 15px 30px rgba(0,0,0,0.26)
+                    transition: all 0.4s linear
+                    font-weight: bold 
+                    &:hover
+                        transform: scale(1.1)
+
+
+
+.text
+    margin-top: 20vh
+    .worry
+        text-transform: uppercase
+        font-weight: bold
+        color: #222222
+        margin-bottom: 0.9rem
+        font-size: 0.8rem
+
+    .bill
+        font-size: 1.6rem
+        width: 400px
+        line-height: 3rem
+
+.email-box
+    margin-top: 22vh
+    width: 700px
+    background: white
+    box-shadow: 3px 15px 40px rgba(0,0,0,0.3)
+    border-radius: 3rem
+    padding: 0.5rem
+    
+    @include display-flex
+    input
+        margin-left: 2rem
+        width: calc(100% - 160px)
+        border: none
+        outline: none
+        font-size: 1.1rem
+    a.send-btn
+        display: block
+        background: rgb(2,0,36);
+        background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(0,219,255,1) 0%, rgba(0,113,188,1) 100%);background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(0,219,255,1) 0%, rgba(0,113,188,1) 44%);
+        color: white
+        padding: 0.5rem 1rem
+        border-radius: 3rem
+        text-transform: uppercase
+        font-weight: bold
+
+
+.details
+    position: absolute
+    bottom: 50vh
+    right: 21vw
+    width: 400px 
+    .box
+        background: #ffffff
+        padding: 2rem 
+        border-radius: 1rem
+        width: 400px
+        position: absolute
+        top: 0
+        left: 0
+        box-shadow: 3px 10px 30px rgba(0,0,0,0.3)
+        .details-link
+            font-weight: bold
+            display: block
+            margin-top: 2rem
+            text-align: right
+        h1
+            font-size: 1.5rem
+            margin-bottom: 1.2rem
+
+        &:nth-child(1)
+            z-index: 3
+
+        &:nth-child(2)
+            *
+                opacity: 0
+            z-index: 2
+            opacity: 0.75
+            left: 4.5rem
+            top: 3rem
+            transform: scale(0.75)
+            
+        &:nth-child(3)
+            *
+                opacity: 0
+            z-index: 1
+            opacity: 0.75
+            left: 7.5rem
+            top: 5rem
+            transform: scale(0.6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

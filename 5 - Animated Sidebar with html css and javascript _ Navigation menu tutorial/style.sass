@@ -1,0 +1,57 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+#sidenav
+  position: fixed
+  left: -200px
+  background-color: #262626
+  height: 100%
+  width: 200px
+  transition: all 500ms linear
+  &.active
+    left: 0
+  ul li
+    color: #ffffff
+    list-style: none
+    padding: 20px 30px
+    border-bottom: 1px solid #dddddd
+    font-family: poppins
+    widows: 100%
+    text-align: center
+  .btn-area
+    position: absolute
+    left: 230px
+    top: 20px
+    font-size: 36px
+    &:hover
+      cursor: pointer
+
+.main-content
+  width: 900px
+  position: relative
+  left: 0
+  top: 20px
+  margin: auto
+  transition: all 500ms linear
+  &.active  
+    left: 200px
+
+
+  h2
+    font-family: baloo
+    font-size: 45px
+    margin-bottom: 1.5rem
+  p
+    line-height: 1.8rem
+    font-size: 1.2rem
+    margin-bottom: 1rem
+  a
+    background-color: #262626
+    text-decoration: none
+    display: inline-block
+    padding: 15px 20px
+    text-transform: uppercase
+    margin-top: 30px
+    color: #ffffff

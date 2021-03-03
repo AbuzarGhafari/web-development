@@ -1,0 +1,157 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body,h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body{
+    background-color: #3c5b9a; 
+    font-family: tahoma;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;    
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    width: 90vw;
+    height: 90vh;
+    background-color: #e9eaef;
+    box-shadow: 0 0 20px #143477;
+}
+
+.top{
+    background-color: #3c5b9a;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem;
+}
+.logo{
+    padding-left: 20px;
+}
+
+.logo a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.login form{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%;
+}
+
+
+.login input{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.login button{
+    outline: none;
+    background-color: #4277b2;
+    border: 1px solid #29847d;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 70px 0 25px;
+}
+
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 140px;
+}
+
+.signup{
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    top: -71px;
+    padding: 30px;
+}
+
+.signup h4{
+    color: gray;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.signup input{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    color: gray;
+    font-size: 1rem;
+}
+
+.signup button{
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: #4277b2;
+    color: #fff;
+    border: 1px solid #29487d;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.signup .field{
+    margin-top: 30px;
+    position: relative;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.signup .label{
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transition: all ease 0.2s;
+    color: #757575; 
+
+}
+
+.signup input:focus ~ .label,
+.signup input:not(:focus):valid ~ .label{
+    top: -17px;
+    font-size: 0.8rem;
+    opacity: 1;
+}

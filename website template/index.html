@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="logo">
+                <h1><span>WP</span>Shopmart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="text animate__animated animate__fadeInLeft" >
+                    <h3>Airbnb for watching</h3>
+                    <h1>Manage Adventures</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit rerum ea delectus quos nisi voluptatem cum autem deleniti.</p>
+                    <div class="btns">
+                        <a href="#" class="btn btn1">Signup Now</a>
+                        <div class="playbtn">
+                            <i class="fas fa-play"></i> <span>How it works</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="site animate__animated animate__fadeInRight">
+                    <img src="site.svg" alt="">
+                </div>
+                <div class="social-icons animate__animated animate__fadeInDown">
+                    <i class="fas fa-share-alt social" id="socialIcon"></i>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var socialIcon = document.querySelector("#socialIcon");
+    socialIcon.addEventListener('click', function(){
+        socialIcon.classList.toggle('active');
+    })
+    </script>
+
+
+
+</body>
+</html>

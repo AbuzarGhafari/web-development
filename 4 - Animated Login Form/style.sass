@@ -1,0 +1,63 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+body
+  background: #022434
+
+.box
+  width: 500px
+  padding: 40px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  text-align: center
+  box-shadow: 8px 5px 8px rgba(255,255,255,0.1)
+  transition: 0.25s
+  &:hover
+    box-shadow: 10px 10px 10px rgba(255,255,255,0.3)
+
+
+  h1
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: 500
+
+  input[type="text"],
+  input[type="password"]
+    border: 0
+    background: none
+    display: block
+    margin: 20px auto
+    text-align: center
+    border: 2px solid #3498db
+    padding: 14px 10px
+    width: 80%
+    outline: none
+    color: #ffffff
+    border-radius: 24px
+    transition: 0.25s
+    &:focus
+      width: 100%
+      border-color: #2ecc71
+      box-shadow: 0px 5px 8px rgba(255,255,255,0.1)
+  input[type="submit"]
+    border: 0
+    background: none
+    outline: none
+    display: block
+    // width: 100%
+    margin: 20px auto
+    text-align: center
+    border: 2px solid #2ecc71
+    padding: 14px 40px
+    color: #ffffff
+    border-radius: 24px
+    transition: 0.25s
+    cursor: pointer
+    &:hover
+      background-color: #2ecc71
+      box-shadow: 0px 5px 8px rgba(255,255,255,0.1)

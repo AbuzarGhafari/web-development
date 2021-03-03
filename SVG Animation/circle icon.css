@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* .checkmark
+{
+	border-style : Solid;
+	border-color : #00A150;
+	border-color : rgba(0, 161, 80, 1);
+	border-width : 20px;
+}
+.circle
+{
+	border-style : Solid;
+	border-color : #BEBFBF;
+	border-color : rgba(190, 191, 191, 1);
+	border-width : 10px;
+} */
+
+
+body{
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+svg{
+	width: 400px;
+	height: 400px;
+	padding: 180px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	box-shadow: 0px 5px 600px rgba(0,0,0,0.4);
+}
+
+.circle{fill:none;stroke:#BEBFBF;stroke-width:10;stroke-miterlimit:10;}
+.checkmark{fill:none;stroke:#00A150;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+svg *{
+	opacity: 0;
+}
+
+svg:hover .circle{
+	opacity: 0;
+	animation: circleAnimation 0.5s ease-out forwards;
+	transform: scale(0.9);
+	transform-origin: center;
+}
+
+@keyframes circleAnimation{
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+svg:hover .checkmark{
+	animation: checkmark-animation 1s ease-out forwards;
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	stroke: #cfd8dc;
+	transform-origin: center;
+}
+
+@keyframes checkmark-animation{
+	40%{
+		opacity: 1;
+		transform: scale(1);		
+	}
+	55%{
+		opacity: 1;
+		stroke:  #cfd8dc;
+		transform: scale(1.2);
+	}
+	70% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+		stroke-dashoffset: 0;
+		transform: scale(1);
+		stroke: #21b587;
+	}
+}

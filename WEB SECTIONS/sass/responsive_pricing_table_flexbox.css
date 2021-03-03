@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background: url("../images/b4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right right;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.wrapper .single-pricing {
+  width: 300px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .single-pricing:not(:last-child) {
+  margin-right: 16px;
+}
+
+.wrapper .single-pricing:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.wrapper .single-pricing .deals {
+  border: 1px solid #eeeeee;
+  list-style: none;
+}
+
+.wrapper .single-pricing .deals .plans {
+  background-color: #0e908f;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.wrapper .single-pricing .deals li {
+  background-color: #262626;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wrapper .single-pricing .deals li:last-child {
+  border-bottom: 0px;
+}
+
+.wrapper .single-pricing .deals .custom-color {
+  background-color: #4ecaac;
+}
+
+button {
+  background-color: #262626;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  .single-pricing {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-right: 0px !important;
+  }
+  button {
+    padding: 12px 24px;
+  }
+}
+/*# sourceMappingURL=responsive_pricing_table_flexbox.css.map */

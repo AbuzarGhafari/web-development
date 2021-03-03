@@ -1,0 +1,146 @@
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background-color: lightgreen;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    outline: 0; 
+    height: 100%;
+    width: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+
+.carousel__button--left{
+    left: -30%;
+    /* left: 0%; */
+    background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+    z-index: 1;
+}
+.carousel__button--left:hover{
+    left: 0px; 
+}
+
+.carousel__button--right{
+    right: -30%; 
+    /* right: 0;  */
+    background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+}
+.carousel__button--right:hover{
+    right: 0px;
+}
+
+
+.carousel__button .arrow{
+    width: 15px;
+    display: block;
+    height: 15px;
+    border: 2px solid;
+    border-color: transparent; 
+}
+.carousel__button--left .arrow{ 
+    border-right-color: black;
+    border-bottom-color: black;
+    position: absolute;
+    left: 0;
+    transform: rotate(-45deg); 
+}
+
+.carousel__button--right .arrow{ 
+    border-right-color: black;
+    border-bottom-color: black;
+    position: absolute;
+    right: 0;
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+}
+
+ 
+.carousel__button--right:hover .arrow{
+    border-right-color: black;
+    border-bottom-color: black;
+    transform: translateX(-50%) rotate(135deg);
+}
+
+.carousel__nav{
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 3rem;
+    transform: translateX(-50%); 
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__nav:hover{
+    bottom: 0rem;
+    padding-bottom: 1rem;
+}
+
+.carousel__indicator{
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel__indicator.current-slide{
+    background-color: #aaa;
+}
+
+.carousel__indicator:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.carousel__indicator:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+.is-hidden {
+    display: none;
+}

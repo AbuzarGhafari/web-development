@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="action">
+      <span>+</span>
+      <ul>
+        <li>Share on Facebook</li>
+        <li>Share on Facebook</li>
+        <li>Share on Facebook</li>
+        <li>Share on Facebook</li>
+      </ul>
+    </div>
+
+    <script>
+      var action = document.querySelector(".action");
+      function acttionToggle() { 
+        action.classList.toggle("active");
+      }
+      action.addEventListener("click", acttionToggle);
+    </script>
+  </body>
+</html>

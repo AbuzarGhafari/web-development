@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap')
+
+
+$light: #ffffff
+$dark: #000000
+$primary-color: #2196f3
+$dark-gray: #111111
+$dark-gray-second: #222222
+$light-gray: #f7f7f7
+$placeholder-color: #999999
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+    scroll-behavior: smooth
+ 
+
+
+@mixin flex-center-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin flex-space-between-center
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin flex-space-between
+    display: flex
+    justify-content: space-between 
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+
+
+@mixin center
+    width: 100%
+    text-align: center
+    margin-bottom: 3rem
+
+
+
+section
+    padding: 100px
+
+a
+    text-decoration: none
+
+img
+    max-width: 100%
+
+
+.btn
+    position: relative
+    display: inline-block
+    background: $primary-color
+    color: $light
+    margin-top: 20px
+    padding: 10px 30px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-weight: 500
+
+
+.center
+    @include center
+
+
+.heading
+    @include center
+    color: $dark-gray
+    position: relative
+
+    h2
+        font-weight: 600
+        font-size: 30px
+        margin-bottom: 1rem
+        padding-bottom: 1rem
+        position: relative
+    
+        &:before
+            content: ""
+            position: absolute
+            display: block
+            width: 120px
+            height: 10px
+            background: $primary-color
+            border-radius: 5px
+            bottom: 0.25rem
+            left: 50%
+            transform: translateX(-50%)
+
+
+    &.white
+        color: $light
+     
+    
+
+
+.content
+    @include flex-space-between
+
+
+.contentBx
+    padding-right: 30px
+    h3
+        font-size: 24px
+        margin-bottom: 10px
+
+.w50
+    min-width: 50%
+
+
+
+header 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 40px 100px
+    color: $light
+    z-index: 9999
+    @include flex-space-between-center
+    transition: 0.5s
+
+    .logo
+        color: $light
+        font-size: 24px
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: 2px
+
+    ul
+        position: relative
+        display: flex
+
+        li
+            position: relative
+            list-style: none
+
+            a
+                position: relative
+                display: inline-block
+                margin: 0 15px
+                color: $light
+    &.sticky
+        background: $light
+        padding: 20px 100px
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1)
+        *
+            color: $dark-gray
+
+    
+.banner
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    position: relative
+    min-height: 100vh
+    background: url('images/banner.jpg')
+    background-size: cover
+    background-position: right    
+    color: $light
+
+    h2, h3
+        font-weight: 500
+        font-size: 3em
+        line-height: 1.5em
+        
+        span
+            font-size: 1.5em
+            font-weight: 700
+    
+
+.services
+    background: $dark-gray
+
+    .content
+        @include flex-center
+        flex-wrap: wrap
+        flex-direction: row
+
+        .servicesBx
+            padding: 40px 20px
+            background: $dark-gray-second
+            color: $light
+            max-width: 340px
+            text-align: center
+            margin: 20px
+            transition: 0.5s
+
+            &:hover
+                background: $primary-color                
+
+            img
+                width: 80px
+                filter: invert(2)
+            
+            h2
+                font-size: 20px
+                font-weight: 600
+            
+
+.work
+    .content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .workBx
+            width: 50%
+            padding: 20px
+
+            img
+                max-width: 100%
+
+
+
+.testimonial
+    background: $light-gray
+
+    .content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .testimonialBx
+            max-width: calc(50% - 40px)
+            padding: 60px 40px
+            margin: 20px
+            background: $primary-color
+
+            p
+                color: $light
+                font-style: italic
+                font-style: 16px
+                font-weight: 300
+
+            h3
+                margin-top: 30px 
+                color: $light
+                font-weight: 600
+                font-size: 20px
+                line-height: 1em
+
+                span
+                    font-size: 14px
+                    font-weight: 400
+        
+            &:nth-child(1)
+                text-align: end
+
+
+
+.contact
+    background: $dark-gray
+
+    h3
+        color: $light
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 10px
+
+    .contactInfo
+        min-width: 40%
+
+        .contactInfoBx
+            position: relative
+
+            .box
+                position: relative
+                padding: 20px 0
+                display: flex
+
+                .icon
+                    min-width: 40px
+                    padding-top: 4px
+                    color: $light
+                    display: flex
+                    justify-content: center
+                    align-items: flex-start
+                    font-size: 24px
+
+                .text
+                    display: flex
+                    margin-left: 20px
+                    font-size: 16px
+                    color: $light
+                    flex-direction: column
+                    font-weight: 300
+
+                    h3
+                        font-weight: 500
+                        color: $primary-color
+
+    .formBx
+        min-width: 60%
+
+        form
+            display: flex
+            flex-direction: column
+
+            input,
+            textarea
+                margin-bottom: 20px
+                padding: 15px
+                font-size: 16px
+                border: none
+                outline: none
+                background: $dark-gray-second
+                color: $light
+                resize: none
+
+                &::placeholder
+                    color: $placeholder-color                    
+
+            textarea
+                min-height: 200px
+            
+            input[type="submit"]
+                max-width: 100px
+                background: $primary-color
+                cursor: pointer
+                text-transform: uppercase
+                letter-spacing: 2px
+
+
+.copyright
+    background: $dark
+    color: $light
+    text-align: center
+    padding: 10px
+
+
+
+
+// Responsive
+
+@media (max-width: 991px)
+    header,
+    header.sticky
+        padding: 20px 50px
+        z-index: 1000 
+
+    header.sticky
+        .toggle
+            filter: invert(1)
+
+    .menu
+        position: fixed
+        top: 75px
+        left: -100%
+        display: block
+        padding: 100px 50px
+        text-align: center
+        width: 100%
+        height: 100vh
+        background: $light
+        transition: 0.5s
+        z-index: 999
+        border-top: 1px solid rgba(0,0,0,0.2)
+
+        &.active
+            left: 0
+
+        li
+            a
+                color: $dark-gray
+                font-size: 24px
+                margin: 10px
+
+    .toggle
+        width: 40px
+        height: 40px
+        background: url('images/menu.png')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 30px
+        cursor: pointer
+        transition: all 0.1s ease-in
+        
+        &.active          
+            background: url('images/close.png')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 25px
+            transition: all 0.1s ease-in
+
+    section
+        padding: 100px 50px
+
+    .banner
+        padding: 150px 50px 100px
+
+        h2
+            font-size: 1.5em
+
+        h3
+            font-size: 1em
+    
+    .btn
+        margin-top: 10px
+        padding: 10px 20px
+        font-size: 16px
+
+    .heading
+        h2
+            font-size: 24px
+    
+    .contentBx
+        h3
+            font-size: 20px
+
+    .content
+        flex-direction: column
+
+    .w50
+        margin-bottom: 20px
+
+    .services .content .servicesBx
+        margin: 10
+
+    .work .content .workBx
+        width: 100%
+        padding: 10px
+    
+    .testimonial .content .testimonialBx
+        max-width: calc(100% - 20px)
+        padding: 40px 20px
+        margin: 10px
+
+        h3
+            margin-top: 10px
+
+    .conactInfo
+        margin: 20px 0
+
+
+
+
+
+@media (max-width: 600px)
+    header,
+    header.sticky
+        padding: 20px 20px
+
+    .banner
+        padding: 150px 20px 100px
+
+    section
+        padding: 100px 20px
+
+
+
+
+

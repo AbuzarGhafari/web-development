@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(5, 146, 189), rgb(0, 151, 211));
+  overflow: hidden;
+}
+
+.action {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.action span{
+    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: rgb(0, 123, 180);
+    box-shadow: 0px 0px 2rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.action.active span{
+    transform: rotate(-135deg);
+}
+
+.action ul{
+    position: absolute;
+    bottom: 3.5rem;
+    /* right: 0.5rem; */
+    right: 120rem;
+    width: 180px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 1rem 1rem rgba(0,0,0,0.1);
+    list-style: none;
+    transition: all 0.3s ease;
+    visibility: hidden; 
+    opacity: 0;
+}
+.action.active ul{
+    bottom: 5rem;
+    right: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.action ul li{
+    cursor: pointer;
+    padding: 3px;
+}
+
+.action ul li:hover{
+    background-color: #ddd;
+    padding: 3px;
+}
+.action ul li:not(:last-child){
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}

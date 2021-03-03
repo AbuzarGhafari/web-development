@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouped Bar Chart</title>
+    <style>
+      .chart-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+
+      var complexities = [0.1, 0.2, 0.4, 0.5, 0.7];
+      var totalMarks = [3, 5, 4, 3, 5];
+      var obtainedMarks = [2, 3, 4, 1, 2];
+      var data = {
+        labels: complexities,
+        datasets: [
+          {
+            label: "Total Questions",
+            backgroundColor: "rgba(255, 120, 120, 0.5)",
+            borderWidth: 1.5,
+            borderColor: "rgba(255, 120, 120, 1)",
+            data: totalMarks,
+          },
+          {
+            label: "Correct Questions",
+            backgroundColor: "rgba(25, 225, 120, 0.5)",
+            borderWidth: 1.5,
+            borderColor: "rgba(25, 225, 120, 1)",
+            data: obtainedMarks,
+          },
+        ],
+      };
+
+      var options = {
+        title: {
+          display: true,
+          position: "top",
+          text: "Category",
+          fontSize: 18,
+          fontColor: "#111",
+        },
+        legend: {
+          display: true,
+          position: "bottom",
+        },
+        barValueSpacing: 20,
+        scales: {
+          xAxes: [
+            {
+              scaleLabel: {
+                display: true,
+                labelString: "Complexity",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              scaleLabel: {
+                display: true,
+                labelString: "Questions Numbers",
+              },
+              ticks: {
+                min: 0,
+              },
+            },
+          ],
+        },
+      };
+
+      var myBarChart = new Chart(ctx, {
+        type: "bar",
+        data: data,
+        options: options,
+      });
+    </script>
+  </body>
+</html>

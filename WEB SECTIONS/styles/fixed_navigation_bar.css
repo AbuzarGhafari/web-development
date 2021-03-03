@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 122;
+    position: fixed;
+}
+
+
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff; 
+    letter-spacing: 5px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff; 
+    letter-spacing: 4px;
+    margin: 0 10px;
+}
+
+
+.banner-area{
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    top: 100px;
+    background-image: url("../images/toys.jpg");
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 800px;
+    background: #ddd;
+    height: 1500px;
+    padding: 5rem;
+}
+
+
+.content-area h2{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
