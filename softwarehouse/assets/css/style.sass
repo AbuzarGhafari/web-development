@@ -1,0 +1,525 @@
+@import 'colors'
+@import 'common'
+    
+// @media screen and (min-width: 768px) 
+ 
+
+header
+    width: 100%
+    height: 100vh
+    position: relative
+    overflow-x: hidden
+
+    .content
+        position: absolute
+        background-image: linear-gradient(rgba(255, 255, 255 ,1), rgba(0,0,0,0.1))
+        top: 0%
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        padding: 1rem 3rem 
+        margin: auto
+        h2
+            font-size: 0.9em
+            color: $darkColor
+            font-weight: 400            
+            margin-top: calc(100vh - 90vh)
+        h1
+            font-size: 3em 
+            margin-bottom: 2rem
+        p 
+            font-size: 1rem
+            line-height: 1.5rem
+        .btn
+            margin-top: 4rem
+            box-shadow: 0px 15px 20px rgba($lightColor, 0.3)
+
+    
+    .bg
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1        
+        img  
+            height: 100%
+            object-fit: cover 
+
+    @media screen and (min-width: 1024px) 
+        display: flex
+        align-items: center
+        justify-content: center
+        .content
+            position: absolute
+            background-image: none
+            top: 0
+            left: 0
+            width: 60%
+            max-width: 1120px   
+            height: 100%
+            display: flex
+            flex-direction: column
+            padding: 2rem 4rem 
+            margin: auto
+
+            h2
+                margin-top: 8rem
+            h1
+                max-width: 650px
+            p
+                margin: 3rem 0
+                max-width: 550px
+            .btn
+                box-shadow: 0px 15px 20px rgba($primaryColor, 0.3)
+        .bg
+            width: 50%
+            height: 50%
+            position: absolute 
+            top: 0
+            left: auto
+            right: 0px
+            z-index: -1       
+
+            img  
+                width: 100%
+                height: 100%
+                object-fit: cover  
+            &::before
+                position: absolute
+                content: ''
+                width: 165%
+                height: 165%
+                background: $grayColor
+                top: -14.2rem
+                right: -29rem
+                z-index: -1
+                transform: rotate(-6deg)
+
+
+.choose
+    padding: 5rem 0
+
+    .grid
+        display: grid
+        grid-template-columns: auto
+        @media screen and (min-width: 1024px) 
+            grid-template-columns: auto auto
+            column-gap: 2rem
+            .icon i
+                font-size: 3rem !important
+
+        .item
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 3rem
+            background: $lightColor
+            padding: 1rem
+            @media screen and (min-width: 1024px) 
+                transition: all 0.5s ease
+                &:hover
+                    transform: translateY(-10px)
+                    box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
+
+            h3
+                margin-bottom: 1rem
+                font-size: 1.2em
+                font-weight: 500
+
+            p
+                font-size: 1rem
+                line-height: 1.8rem
+                color: $darkColor
+
+            .icon
+                width: 100px
+                i
+                    color: $secondaryColor
+                    font-size: 2rem
+
+
+.package
+    padding: 2rem 0 0
+    
+    @media screen and (min-width: 1024px) 
+        padding: 2rem 0
+        width: 100% !important
+        .container
+            display: flex
+            align-items: center
+            justify-content: space-between
+                    
+            .heading
+                font-size: 2.5em
+                line-height: 3rem
+
+            .left
+                order: 2
+                width: 55%
+                margin-left: 5rem 
+
+            .img 
+                width: 45%
+                order: 1   
+                img
+                    width: 100%
+                    height: 100%
+                &::before 
+                    width: 100%
+                    height: 130% 
+                    bottom: -15%
+                    left: 0%
+                    transform: rotate(-15deg)
+
+    .left
+        margin-bottom: 2rem
+    
+    .heading
+        font-size: 1.5em
+        letter-spacing: 2px
+        line-height: 2rem
+        position: relative
+        padding-bottom: 1rem
+        margin-bottom: 2rem
+        &::before
+            position: absolute
+            content: ''
+            width: 30%
+            height: 3px
+            background: $primaryColor
+            bottom: 0
+            left: 0
+    p
+        font-size: 0.9rem
+        line-height: 1.2rem
+        color: $darkColor
+
+    .checklist
+        display: flex
+        flex-direction: column
+        margin-top: 2rem
+        .item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 1rem
+            i
+                display: inline-block
+                width: 80px
+                font-size: 1.2rem
+    .btn
+        width: 180px !important
+    
+    .img 
+        position: relative 
+        img
+            margin-bottom: 1rem
+        &::before
+            position: absolute
+            content: ''
+            width: 200%
+            height: 70%
+            background: $grayColor
+            bottom: 0
+            left: -50%
+            z-index: -1
+
+
+.working-process
+    background: $lightColor
+    padding: 3rem 0
+    .heading
+        text-align: center
+
+    .grid
+        display: grid
+        grid-template-columns: auto auto
+        @media screen and (min-width: 768px) 
+            grid-template-columns: auto  auto auto auto
+
+
+    .item
+        text-align: center
+        margin-bottom: 2rem
+        .icon
+            width: 110px
+            height: 110px
+            margin: auto
+            background: #ffffff
+            border: 1px solid $primaryColor
+            text-align: center
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 1rem
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1)
+            i
+                color: $primaryColor
+                font-size: 2.5rem
+        p
+            font-size: 1rem
+            font-weight: 500
+        @media screen and (min-width: 768px) 
+            position: relative
+            .icon
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    left: 100%
+                    top: 50%
+                    transform: translateY(-50%) 
+                    box-shadow: 0px 1px 10px rgba(0,0,0,0.3)
+                    width: 145%
+                    @media screen and (min-width: 1350px) 
+                        width: 200%
+                    height: 1px
+                    background: $primaryColor
+                &.noline::before
+                    width: 0px !important
+                .right-arrow-top
+                    position: absolute 
+                    content: ''
+                    left: -10px
+                    top: 50%
+                    width: 10px
+                    height: 2px
+                    background: $primaryColor
+                    transform: translateY(-50%) rotate(45deg)
+                    transform-origin: right
+                .right-arrow-bottom
+                    position: absolute 
+                    content: ''
+                    left: -10px
+                    top: 50%
+                    width: 10px
+                    height: 2px
+                    background: $primaryColor
+                    transform: translateY(-50%) rotate(-45deg)
+                    transform-origin: right
+                        
+
+
+.pricing-plans
+    padding: 5rem 0
+    .heading
+        text-align: center
+        margin-bottom: 5rem
+    .grid
+        display: grid
+        grid-template-columns: auto
+        @media screen and (min-width: 768px) 
+            grid-template-columns: auto auto auto
+            column-gap: 2rem
+            
+    .plan
+        position: relative
+        border: 1px solid $grayColor
+        border-radius: 8px
+        padding: 1rem
+        width: 100%
+        max-width: 360px
+        margin: 0 auto 5rem
+        text-align: center
+        transition: all 0.3s ease
+        background: #ffffff
+        &:last-child
+            margin-bottom: 0px
+        @media screen and (min-width: 768px) 
+            &:last-child
+                margin: 0 auto 5rem
+            &:hover
+                transform: scale(1.15) translateY(10px)
+                box-shadow: 0px 25px 50px rgba($primaryColor, 0.1)
+        .price
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            padding: 1rem
+            background: $lightColor
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 1.5rem
+            position: absolute
+            left: 50%
+            top: -60px
+            transform: translateX(-50%)
+            border: 10px solid white
+            font-weight: bold
+            color: $primaryColor
+        h3
+            margin: 70px 0px 1.5rem
+            color: $primaryColor
+        ul
+            margin-bottom: 1rem
+            li
+                color: $darkColor
+                font-size: 0.8rem
+                margin-bottom: 0.5rem
+        .btn
+            background: white
+            border: 1px solid $primaryColor
+            border-radius: 0.2rem
+            color: $primaryColor
+            box-shadow: 0px 5px 5px rgba($primaryColor, 0.05)
+            font-size: 0.8rem
+            width: 160px
+            max-width: 180px !important
+            &:hover
+                box-shadow: 0px 5px 15px rgba($primaryColor, 0.2)
+                
+        &.standard
+            border-color: $secondaryColor
+            .price
+                background: $secondaryColor
+                color: $lightColor
+            .btn
+                background: $primaryColor
+                color: $lightColor
+                box-shadow: 0px 5px 25px rgba($primaryColor, 0.5)
+                &:hover
+                    box-shadow: 0px 10px 15px rgba($primaryColor, 0.5)
+                
+
+
+.testimonials
+    padding: 5rem 0 
+    
+    @media screen and (min-width: 768px) 
+        position: relative
+        .circle
+            position: absolute
+            top: -100px
+            left: -120px
+            width: 300px
+            height: 300px
+            border-radius: 50%
+            background: lighten($primaryColor, 65%)
+            z-index: 1
+            &.circle-2
+                right: -20%
+                left: auto
+                top: -25%
+                width: 400px
+                height: 400px
+            &.circle-3            
+                left: 10%
+                top: 25%
+                width: 100px
+                height: 100px
+            &.circle-4            
+                left: 25%
+                top: 15%
+                width: 40px
+                height: 40px
+            &.circle-5           
+                left: 85%
+                top: 85%
+                width: 30px
+                height: 30px
+
+
+    .heading
+        text-align: center
+
+    .slider
+        height: 50vh 
+        .slider__txt
+            letter-spacing: 1px
+            line-height: 1.6rem
+            position: relative
+            width: 100%
+            
+            @media screen and (min-width: 768px) 
+                max-width: 600px 
+            &::before
+                position: absolute
+                content: '\2033'
+                font-size: 10rem
+                top: 30px
+                left: -90px
+                width: 30px
+                height: 30px 
+                color: $primaryColor
+
+footer
+    background: $grayColor
+    padding: 5rem 0
+    p
+        color: $primaryColor
+        font-size: 0.8rem
+        line-height: 1.5rem
+    h3
+        font-size: 1rem
+        font-weight: 500
+        margin-bottom: 1rem
+    .top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 3rem
+        padding-bottom: 1rem
+        border-bottom: 1px solid lighten($darkColor, 40%)
+        .logo
+            width: 150px
+        .socials
+            a
+                display: inline-block
+                margin-left: 1rem
+                color: $darkColor
+                border: 1px solid $darkColor
+                width: 30px
+                height: 30px
+                text-align: center
+                line-height: 30px
+                border-radius: 50%
+
+    .grid
+        display: grid
+        grid-template-columns: auto
+        @media screen and (min-width: 768px) 
+            grid-template-columns: auto auto auto auto
+            h3
+                margin-bottom: 1.5rem
+            p, ul li
+                margin-bottom: 1.2rem
+            textarea
+                height: 8rem
+        .col
+            width: 100%
+            margin-bottom: 2rem
+            &:last-child
+                margin-bottom: 0px
+            p i
+                width: 30px
+                font-size: 1rem
+                color: $secondaryColor
+            ul
+                list-style: initial
+                margin-left: 1rem
+                a
+                    color: $primaryColor
+                    line-height: 1.75rem
+            form
+                input,
+                textarea
+                    width: 100%
+                    display: block
+                    output: none
+                    border: none
+                    background: darken($grayColor, 10%)
+                    border-radius: 5px
+                    resize: none
+                    padding: 1rem 
+                    margin-bottom: 1rem 
+            
+.copyright
+    padding: 2rem 0
+    text-align: center
+    color: lighten($darkColor, 20%)
+    background: $darkBGColor

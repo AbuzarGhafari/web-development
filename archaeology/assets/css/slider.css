@@ -1,0 +1,134 @@
+
+/* Slideshow container */
+.slideshow-container { 
+    width: 100%;
+    height: calc(100vh - 132.44px);
+    position: relative;
+    margin: auto; 
+    overflow: hidden; 
+}
+.slideshow-container img { 
+    width: 100%;
+    height: calc(100vh - 132.44px);
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center center;  
+}
+
+
+.mySlides {
+    display: none
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; 
+  background-color: rgba(53, 53, 53, 0.5);
+  height: 120px !important;
+  transform: translateY(-50%);
+  line-height: 120px;
+  width: auto;
+  padding: 0 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 1rem;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 1rem;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: auto;  
+  /* background-color: rgb(133, 133, 247); */
+  text-align: center;
+   
+}
+ 
+/* The dots/bullets/indicators */
+
+.slide-dots{ 
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgba(119, 119, 119, 0.8);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.slide-dots .active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    .prev, .next{
+        display: block !important;
+    }
+    .slideshow-container {  
+      height: calc(100vh - 113.24px);
+    }
+    
+    .slideshow-container img {  
+      height: calc(100vh - 113.24px);
+    }
+    
+}
